@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Slider x:Name="horizSlider" HorizontalAlignment="Left" Height="25" Margin="224,272,0,0" VerticalAlignment="Top" Width="250" ValueChanged="horizSlider_ValueChanged"/>
+        <Canvas x:Name="paperCanvas" HorizontalAlignment="Left" Height="250" Margin="224,17,0,0" VerticalAlignment="Top" Width="250" Background="#FF807676"/>
+        <Slider x:Name="vertSlider" HorizontalAlignment="Left" Margin="197,17,0,0" VerticalAlignment="Top" Height="250" Width="22" Orientation="Vertical" ValueChanged="vertSlider_ValueChanged"/>
+        <Label x:Name="horizLabel" Content="   0" HorizontalAlignment="Left" Margin="318,289,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.145,0.482" Height="29" Width="35"/>
+        <Label x:Name="vertLabel" Content="   0" HorizontalAlignment="Left" Margin="154,122,0,0" VerticalAlignment="Top" Width="38"/>
+
     </Grid>
 </Window>
